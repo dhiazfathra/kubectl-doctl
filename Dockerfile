@@ -7,7 +7,7 @@ FROM atlassian/default-image:2
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.15.11/bin/linux/amd64/kubectl \
  && chmod u+x ./kubectl \
  && mv kubectl /usr/local/bin \
- && curl -LO https://github.com/digitalocean/doctl/releases/download/v1.30.0/doctl-1.30.0-linux-amd64.tar.gz \
+ && curl -LO https://github.com/digitalocean/doctl/releases/download/v1.39.0/doctl-1.39.0-linux-amd64.tar.gz \
  && tar xzvf doctl-1.30.0-linux-amd64.tar.gz \
  && chmod u+x ./doctl \
  && mv doctl /usr/local/bin
